@@ -27,7 +27,7 @@ models = {
     #Спектральная кластеризация
     'Spectral': SpectralClustering(n_clusters=3), 
     #BIRCH
-    'BIRCH': Birch(n_clusters=3)
+    'BIRCH': Birch(n_clusters=3, threshold=0.3)
 }
 
 print("Результаты кластеризации:")
@@ -91,4 +91,5 @@ for bar in bars:
              ha='center', va='bottom', fontweight='bold')
 
 plt.show()
+
 
